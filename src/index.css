@@ -142,11 +142,11 @@
     }
 
     #rightPhotoSwiper {
-        margin-left: 50px;
+        /*margin-left: 50px;*/
     }
 
     #leftPhotoSwiper {
-        margin-left: 35px;
+        /*margin-left: 35px;*/
     }
 
     .swiper-container {
@@ -175,8 +175,8 @@
 
     .swiper-slide img {
         display: block;
-        width: 100%;
-        height: 100%;
+        /*width: 100%;*/
+        /*height: 100%;*/
         object-fit: cover;
     }
 }

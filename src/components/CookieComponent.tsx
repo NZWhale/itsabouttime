@@ -35,7 +35,9 @@ class CookieComponent extends React.Component<RouteComponentProps> {
                     alignItems: "center",
                     justifyContent: "center",
                 }}>
-                    <img src={this.getRandomImage()} className="fortuneImg"/>
+                    <img src={this.getRandomImage()} className="fortuneImg" style={{cursor: "pointer"}} onClick={() => {
+                        this.props.history.push('/archive')
+                    }}/>
                 </div>
             </>
         );

@@ -14,6 +14,8 @@ import StudioWallComponent from "./components/StudioWallComponent";
 import TimeFontComponent from "./components/TimeFontComponent";
 import WatchComponent from "./components/WatchComponent";
 import PhotographsComponents from "./components/PhotographsComponents";
+import PostersComponent from "./components/PostersComponent";
+import CookieComponent from "./components/CookieComponent";
 
 
 class App extends React.Component {
@@ -47,6 +49,12 @@ class App extends React.Component {
                 </Route>
                 <Route path="/photographs">
                     <PhotographsComponents/>
+                </Route>
+                <Route path="/posters">
+                    <PostersComponent />
+                </Route>
+                <Route path='/cookie'>
+                <CookieComponent/>
                 </Route>
             </Router>
             </>

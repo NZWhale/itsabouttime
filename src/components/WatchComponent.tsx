@@ -1,14 +1,6 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/swiper.min.css";
-import "swiper/components/navigation/navigation.min.css"
-import SwiperCore, {
-    Navigation
-} from 'swiper/core';
 import watch from '../content/Архив/Forever Chasing Tomorrow Watch.png'
 import {RouteComponentProps, withRouter} from "react-router-dom";
-
-SwiperCore.use([Navigation]);
 
 class WatchComponent extends React.Component<RouteComponentProps> {
     render() {

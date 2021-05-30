@@ -40,7 +40,7 @@ class FullArchiveComponent extends React.Component<RouteComponentProps> {
                         src={poster}
                         style={{width: "722px", cursor: "pointer", height: "919px", marginTop: "300px"}}
                         onClick={() => {
-                            this.props.history.push('/main')
+                            this.props.history.push('/posters')
                         }}
                     />
                     <img
@@ -54,14 +54,7 @@ class FullArchiveComponent extends React.Component<RouteComponentProps> {
                         src={fortuneCookies}
                         style={{width: "1010px", cursor: "pointer", height: "1123px"}}
                         onClick={() => {
-                            const cookieArray = [cookies1, cookies2, cookies4, cookies5, cookies6, cookies7, cookies8, cookies9, cookies10, cookies11, cookies12, cookies13]
-                            const randomNum = Math.floor(Math.random() * cookieArray.length)
-                            const url = cookieArray[randomNum]
-                            const link = document.createElement('a');
-                            link.target = "_blank";
-                            // link.download = url;
-                            link.href = url;
-                            link.click();
+                            this.props.history.push('/cookie')
                         }}
                     />
                     <img

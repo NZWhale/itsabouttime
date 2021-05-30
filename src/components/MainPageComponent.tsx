@@ -3,7 +3,7 @@ import {RouteComponentProps, withRouter} from "react-router-dom";
 
 class MainPageComponent extends React.Component<RouteComponentProps> {
     getRandomPage(){
-        const arrayOfPagesUrls = ["/archive", "/weeklies", "/poems", "/packing", "/walls", "/fonts", "/watch", "/photographs"]
+        const arrayOfPagesUrls = ["/archive", "/weeklies", "/poems", "/packanging", "/walls", "/fonts", "/watch", "/photographs"]
         const randomNum = Math.floor(Math.random() * arrayOfPagesUrls.length)
         return arrayOfPagesUrls[randomNum]
     }

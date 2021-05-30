@@ -19,21 +19,24 @@ SwiperCore.use([Navigation]);
 class WeekliesComponent extends React.Component<RouteComponentProps> {
     render() {
         const pantsArray = [secondPants, thirdPants, forthPants, noTimeToDiePants, pantsMakeTheFirstImpression, pantsPutAPause, pantsTimeForALittleLuxury]
-        const swiperSlides = pantsArray.map(pants => <SwiperSlide><img src={pants} style={{
-            width: "840px",
-            height: "433px"
-        }}/></SwiperSlide>)
+        const swiperSlides = pantsArray.map(pants => <SwiperSlide><img src={pants} id='poemImg'/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
 
                 <div className="headerDiv">
-                    <h1> It's About Time</h1>
+                    <h1
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                        this.props.history.push('/main')
+                    }}> It's About Time</h1>
                 </div>
                 <div className="headerDiv">
                     <h4>Weeklies</h4>

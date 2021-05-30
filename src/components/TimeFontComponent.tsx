@@ -17,17 +17,23 @@ SwiperCore.use([Navigation]);
 class TimeFontComponent extends React.Component<RouteComponentProps> {
     render() {
         const fontsArray = [firstFont, secondFont, thirdFont, fourthFont]
-        const swiperSlides = fontsArray.map(font => <SwiperSlide><img src={font} style={{width: "465px", height: "70px"}}/></SwiperSlide>)
+        const swiperSlides = fontsArray.map(font => <SwiperSlide><img src={font} style={{width: "100%", height: "70px"}}/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
                 <div className="headerDiv">
-                    <h1> It's About Time</h1>
+                    <h1
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                        this.props.history.push('/main')
+                    }}> It's About Time</h1>
                 </div>
                 <div className="headerDiv">
                     <h4>Times Font</h4>
@@ -37,17 +43,11 @@ class TimeFontComponent extends React.Component<RouteComponentProps> {
                         The typeface was distored via sctipr that run once a day. I later transferred it into Glyphs and created a typeface everyday.</p>
                 </div>
 
-                <div style={{
-                    width: "50%",
-                    height: "50%",
-                    display: "flex",
-                    flexDirection: "column",
-                    flexWrap: "wrap"
-                }}>
-                    <Swiper navigation={true} className="mySwiper" style={{marginLeft: "150px", marginTop: "200px"}}>
+                <div className='timeFontDiv'>
+                    <Swiper navigation={true} className="mySwiper" id="timeFontSwiper">
                         {swiperSlides}
                     </Swiper>
-                    <img src={itAboutTimeFont} style={{width: "507px", height: "671px", marginTop: "50px", marginLeft: "250px"}}/>
+                    <img src={itAboutTimeFont} className="timeFontImg"/>
                 </div>
             </>
         );

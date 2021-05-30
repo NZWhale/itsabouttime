@@ -50,19 +50,25 @@ SwiperCore.use([Navigation]);
 class PhotographsComponents extends React.Component<RouteComponentProps> {
     render() {
         const leftPhotosArray = [l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13, l14, l15, l16, l17, l18, l19, l20]
-        const leftSwiperSlides = leftPhotosArray.map(leftPhoto => <SwiperSlide><img src={leftPhoto} style={{width: "292px", height: "516px"}}/></SwiperSlide>)
+        const leftSwiperSlides = leftPhotosArray.map(leftPhoto => <SwiperSlide><img src={leftPhoto} className="swiperPosterImg"/></SwiperSlide>)
         const rightPhotosArray = [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10, r11, r12, r13, r14, r15, r16, r17, r18]
-        const rightSwiperSlides = rightPhotosArray.map(rightPhoto => <SwiperSlide><img src={rightPhoto} style={{width: "292px", height: "516px"}}/></SwiperSlide>)
+        const rightSwiperSlides = rightPhotosArray.map(rightPhoto => <SwiperSlide><img src={rightPhoto} className="swiperPosterImg"/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
                 <div className="headerDiv">
-                    <h1> It's About Time</h1>
+                    <h1
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                        this.props.history.push('/main')
+                    }}> It's About Time</h1>
                 </div>
                 <div className="headerDiv">
                     <h4>85 Photographs</h4>
@@ -79,10 +85,10 @@ class PhotographsComponents extends React.Component<RouteComponentProps> {
                     flexDirection: "column",
                     flexWrap: "wrap"
                 }}>
-                    <Swiper navigation={true} className="mySwiper" style={{marginLeft: "150px", marginTop: "100px"}}>
+                    <Swiper navigation={true} className="mySwiper" id="leftPhotoSwiper" >
                         {leftSwiperSlides}
                     </Swiper>
-                    <Swiper navigation={true} className="mySwiper" style={{marginLeft: "250px", marginTop: "100px"}}>
+                    <Swiper navigation={true} className="mySwiper" id="rightPhotoSwiper">
                         {rightSwiperSlides}
                     </Swiper>
                 </div>

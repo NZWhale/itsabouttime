@@ -16,6 +16,7 @@ import WatchComponent from "./components/WatchComponent";
 import PhotographsComponents from "./components/PhotographsComponents";
 import PostersComponent from "./components/PostersComponent";
 import CookieComponent from "./components/CookieComponent";
+import AboutComponent from "./components/AboutComponent";
 
 
 class App extends React.Component {
@@ -54,6 +55,9 @@ class App extends React.Component {
                 </Route>
                 <Route path='/cookie'>
                 <CookieComponent/>
+                </Route>
+                <Route path='/about'>
+                    <AboutComponent/>
                 </Route>
                 <Redirect from='/' to='main'/>
             </Router>

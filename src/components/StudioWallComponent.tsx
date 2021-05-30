@@ -30,17 +30,23 @@ SwiperCore.use([Navigation]);
 class StudioWallComponent extends React.Component<RouteComponentProps> {
     render() {
         const wallsArray = [first, second, third, fourth, fifth, sixth, seventh, eighth, ninth, tenth, eleventh, twelfth, thirteenth, fourteenth, fifteenth, sixteenth, seventeenth, eighteenth]
-        const swiperSlides = wallsArray.map(wall => <SwiperSlide><img src={wall} style={{width: "840px", height: "433px"}}/></SwiperSlide>)
+        const swiperSlides = wallsArray.map(wall => <SwiperSlide><img src={wall} id="poemImg"/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
                 <div className="headerDiv">
-                    <h1> It's About Time</h1>
+                    <h1
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                        this.props.history.push('/main')
+                    }}> It's About Time</h1>
                 </div>
                 <div className="headerDiv">
                     <h4>Studio Wall</h4>

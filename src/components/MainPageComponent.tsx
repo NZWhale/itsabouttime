@@ -13,8 +13,10 @@ class MainPageComponent extends React.Component<RouteComponentProps> {
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
                 <div className="alignCenter">
                     <button
@@ -24,7 +26,7 @@ class MainPageComponent extends React.Component<RouteComponentProps> {
                         }}
                         style={{cursor: "pointer"}}
                     >
-                        IT'S ABOUT TIME
+                        <a className='buttonText'>IT'S ABOUT TIME</a>
                     </button>
                 </div>
             </>

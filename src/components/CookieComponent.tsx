@@ -1,5 +1,4 @@
 import React from "react";
-import watch from '../content/Архив/Forever Chasing Tomorrow Watch.png'
 import {RouteComponentProps, withRouter} from "react-router-dom";
 import cookies1 from '../content/cookies/Cookies1.png'
 import cookies2 from '../content/cookies/Cookies2.png'
@@ -24,8 +23,10 @@ class CookieComponent extends React.Component<RouteComponentProps> {
             <><div className="headerButtons">
                 <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                     this.props.history.push('/archive')
-                }}>FULLARCHIVE</a><a
-                style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                }}>FULL ARCHIVE</a><a
+                style={{marginTop: "19px", marginRight: "23px", fontSize: "14px", cursor: "pointer"}} onClick={() => {
+                this.props.history.push('/about')
+            }}>ABOUT</a>
             </div>
                 <div style={{
                     width: "100%",
@@ -34,7 +35,7 @@ class CookieComponent extends React.Component<RouteComponentProps> {
                     alignItems: "center",
                     justifyContent: "center",
                 }}>
-                    <img src={this.getRandomImage()} style={{width: "800px", height: "800px"}}/>
+                    <img src={this.getRandomImage()} className="fortuneImg"/>
                 </div>
             </>
         );

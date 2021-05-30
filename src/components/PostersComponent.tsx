@@ -64,14 +64,16 @@ SwiperCore.use([Navigation]);
 class PostersComponent extends React.Component<RouteComponentProps> {
     render() {
         const postersArray = [first, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12, p13, p14, p15, p16, p17, p18, p19, p20, p21, p22, p23, p24, p25, p26, p27, p28, p29, p30, p31, p32, p33, p34, p35, p36, p37, p39, p40, p42, p43, p44, p45, p46, p47, p48, p49, p50, p51, p52]
-        const swiperSlides = postersArray.map(poster => <SwiperSlide><img src={poster} style={{width: "840px", height: "433px"}}/></SwiperSlide>)
+        const swiperSlides = postersArray.map(poster => <SwiperSlide><img src={poster} className='swiperPosterImg'/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
                 <div className="headerDiv">
                     <h1> It's About Time</h1>

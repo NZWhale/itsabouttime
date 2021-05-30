@@ -23,11 +23,17 @@ class PackagingComponent extends React.Component<RouteComponentProps> {
                 <div className="headerButtons">
                     <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
                         this.props.history.push('/archive')
-                    }}>FULLARCHIVE</a><a
-                    style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+                    }}>FULL ARCHIVE</a><a
+                    style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/about')
+                }}>ABOUT</a>
                 </div>
                 <div className="headerDiv">
-                    <h1> It's About Time</h1>
+                    <h1
+                        style={{cursor: "pointer"}}
+                        onClick={() => {
+                        this.props.history.push('/main')
+                    }}> It's About Time</h1>
                 </div>
                 <div className="headerDiv">
                     <h4>Packanging</h4>

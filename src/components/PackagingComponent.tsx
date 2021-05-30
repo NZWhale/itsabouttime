@@ -17,7 +17,7 @@ SwiperCore.use([Navigation]);
 class PackagingComponent extends React.Component<RouteComponentProps> {
     render() {
         const packangingsArray = [first, second, third, fourth, fifth]
-        const swiperSlides = packangingsArray.map(packanging => <SwiperSlide><img src={packanging} className='packangingImg'/></SwiperSlide>)
+        const swiperSlides = packangingsArray.map(packanging => <SwiperSlide><img src={packanging} className='packangingImage'/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">

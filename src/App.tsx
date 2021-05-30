@@ -21,7 +21,7 @@ import CookieComponent from "./components/CookieComponent";
 class App extends React.Component {
     render() {
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Route path="/main">
                     <MainPageComponent/>
                 </Route>

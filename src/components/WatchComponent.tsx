@@ -1,0 +1,44 @@
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper.min.css";
+import "swiper/components/navigation/navigation.min.css"
+import SwiperCore, {
+    Navigation
+} from 'swiper/core';
+import watch from '../content/Архив/Forever Chasing Tomorrow Watch.png'
+import {RouteComponentProps, withRouter} from "react-router-dom";
+
+SwiperCore.use([Navigation]);
+
+class WatchComponent extends React.Component<RouteComponentProps> {
+    render() {
+        return (
+            <><div className="headerButtons">
+                <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
+                    this.props.history.push('/archive')
+                }}>FULLARCHIVE</a><a
+                style={{marginTop: "19px", marginRight: "23px", fontSize: "14px"}}>ABOUT</a>
+            </div>
+
+                <div className="headerDiv">
+                    <h1> It's About Time</h1>
+                </div>
+                <div className="headerDiv">
+                    <h4>Forever Chasing Tomorrow Watch</h4>
+                </div>
+
+                <div style={{
+                    width: "100%",
+                    height: "70%",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                }}>
+                    <img src={watch} style={{width: "400px", height: "400px"}}/>
+                </div>
+            </>
+        );
+    }
+}
+
+export default withRouter(WatchComponent)

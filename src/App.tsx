@@ -21,7 +21,6 @@ import CookieComponent from "./components/CookieComponent";
 class App extends React.Component {
     render() {
         return (
-            <>
             <Router>
                 <Route path="/main">
                     <MainPageComponent/>
@@ -56,8 +55,8 @@ class App extends React.Component {
                 <Route path='/cookie'>
                 <CookieComponent/>
                 </Route>
+                <Redirect from='/' to='main'/>
             </Router>
-            </>
         )
     }
 }

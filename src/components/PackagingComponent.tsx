@@ -17,7 +17,7 @@ SwiperCore.use([Navigation]);
 class PackagingComponent extends React.Component<RouteComponentProps> {
     render() {
         const packangingsArray = [first, second, third, fourth, fifth]
-        const swiperSlides = packangingsArray.map(packanging => <SwiperSlide><img src={packanging} style={{width: "840px", height: "433px"}}/></SwiperSlide>)
+        const swiperSlides = packangingsArray.map(packanging => <SwiperSlide><img src={packanging} className='packangingImg'/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
@@ -39,7 +39,7 @@ class PackagingComponent extends React.Component<RouteComponentProps> {
                     <h4>Packanging</h4>
                 </div>
                 <div className="headerDiv" >
-                    <p style={{width: "435px", textAlign: "center"}}>A series of formless packaging. They hug the product in such a way that it is impossible to guess what is inside. The viewer see the words/slogans first, the product inside it after.<br/><br/>
+                    <p style={{padding: "12px", width: "435px", textAlign: "center"}}>A series of formless packaging. They hug the product in such a way that it is impossible to guess what is inside. The viewer see the words/slogans first, the product inside it after.<br/><br/>
                         This sub-outcome was made during the first stage of the project in an attempt to reserach the relationship between the slogans and the advertised products. </p>
                 </div>
                 <div style={{

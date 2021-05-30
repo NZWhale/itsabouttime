@@ -24,7 +24,7 @@ class AboutComponent extends React.Component<RouteComponentProps> {
                     <h4>About the project</h4>
                 </div>
                 <div className="headerDiv" >
-                    <p style={{width: "435px", textAlign: "center"}}>It’s About Time project is a multilayered visual diary that takes the form of a calendar/a publication. The front side is a calendar that depicts experimental posters prompted by the language about time. The backside is a publication that takes the form of a visual essay containing every sub-outcome I created throughout.
+                    <p style={{padding: "12px", width: "435px", textAlign: "center"}}>It’s About Time project is a multilayered visual diary that takes the form of a calendar/a publication. The front side is a calendar that depicts experimental posters prompted by the language about time. The backside is a publication that takes the form of a visual essay containing every sub-outcome I created throughout.
                         <br/><br/>
                         The project went from advertisement critique to researching time-related slogans to finally discovering, accepting, and developing my practice and my voice as a designer through a series of prompts. The title of the project refers to the research theme of the project and works as an ironic note about me taking so long to analyze and accept my practice.
                         <br/><br/>

@@ -74,7 +74,7 @@ class PhotographsComponents extends React.Component<RouteComponentProps> {
                     <h4>85 Photographs</h4>
                 </div>
                 <div className="headerDiv" >
-                    <p style={{width: "435px", textAlign: "center"}}>85 Photographs (To – From) is a publication that features 85 photographs that I took on my way to and from Britanka from January to May 2021.<br/><br/>
+                    <p style={{padding: "12px", width: "435px", textAlign: "center"}}>85 Photographs (To – From) is a publication that features 85 photographs that I took on my way to and from Britanka from January to May 2021.<br/><br/>
                         All pictures taken on my Iphone 11 Pro Max.
                     </p>
                 </div>

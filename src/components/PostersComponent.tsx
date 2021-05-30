@@ -82,7 +82,7 @@ class PostersComponent extends React.Component<RouteComponentProps> {
                     <h4>Posters</h4>
                 </div>
                 <div className="headerDiv" >
-                    <p style={{width: "435px", textAlign: "center"}}>Description here.</p>
+                    <p style={{padding: "12px", width: "435px", textAlign: "center"}}>Description here.</p>
                 </div>
                 <div style={{
                     width: "100%",

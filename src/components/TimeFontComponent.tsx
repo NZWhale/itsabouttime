@@ -39,7 +39,7 @@ class TimeFontComponent extends React.Component<RouteComponentProps> {
                     <h4>Times Font</h4>
                 </div>
                 <div className="headerDiv" >
-                    <p style={{width: "435px", textAlign: "center"}}>Typeface was made as an attempt to research ways to translate the passing of time through typography.<br/><br/>
+                    <p style={{padding: "12px", width: "435px", textAlign: "center"}}>Typeface was made as an attempt to research ways to translate the passing of time through typography.<br/><br/>
                         The typeface was distored via sctipr that run once a day. I later transferred it into Glyphs and created a typeface everyday.</p>
                 </div>
 

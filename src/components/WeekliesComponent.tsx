@@ -19,7 +19,7 @@ SwiperCore.use([Navigation]);
 class WeekliesComponent extends React.Component<RouteComponentProps> {
     render() {
         const pantsArray = [secondPants, thirdPants, forthPants, noTimeToDiePants, pantsMakeTheFirstImpression, pantsPutAPause, pantsTimeForALittleLuxury]
-        const swiperSlides = pantsArray.map(pants => <SwiperSlide><img src={pants} id='poemImg'/></SwiperSlide>)
+        const swiperSlides = pantsArray.map(pants => <SwiperSlide><img src={pants} id='pantsImg'/></SwiperSlide>)
         return (
             <>
                 <div className="headerButtons">
@@ -42,7 +42,7 @@ class WeekliesComponent extends React.Component<RouteComponentProps> {
                     <h4>Weeklies</h4>
                 </div>
                 <div className="headerDiv">
-                    <p style={{width: "435px"}}>A collection of 7 pairs of underwear. The objects depict the passing of
+                    <p style={{padding: "12px", width: "435px"}}>A collection of 7 pairs of underwear. The objects depict the passing of
                         time through everyday objects.</p>
                 </div>
                 <div style={{
@@ -52,7 +52,7 @@ class WeekliesComponent extends React.Component<RouteComponentProps> {
                     alignItems: "center",
                     justifyContent: "center",
                 }}>
-                    <Swiper navigation={true} className="mySwiper">
+                    <Swiper navigation={true} className="mySwiper" id="poemSwiper">
                         {swiperSlides}
                     </Swiper>
                 </div>

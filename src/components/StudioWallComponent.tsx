@@ -52,7 +52,7 @@ class StudioWallComponent extends React.Component<RouteComponentProps> {
                     <h4>Studio Wall</h4>
                 </div>
                 <div className="headerDiv" >
-                    <p style={{width: "435px", textAlign: "center"}}>A documentation of my studio wall. I photographed it every time I arrived at the studio.<br/><br/>
+                    <p style={{padding: "12px", width: "435px", textAlign: "center"}}>A documentation of my studio wall. I photographed it every time I arrived at the studio.<br/><br/>
                         The process started once I noticed that some of the cards with the slogans started falling off the wall.
 
 

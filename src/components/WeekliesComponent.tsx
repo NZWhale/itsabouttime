@@ -45,9 +45,10 @@ class WeekliesComponent extends React.Component<RouteComponentProps> {
                     <p style={{padding: "12px", width: "435px"}}>A collection of 7 pairs of underwear. The objects depict the passing of
                         time through everyday objects.</p>
                 </div>
-                <div style={{
+                <div
+                    id='weekliesDiv'
+                    style={{
                     width: "100%",
-                    height: "70%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

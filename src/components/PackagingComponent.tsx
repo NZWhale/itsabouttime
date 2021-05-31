@@ -43,13 +43,11 @@ class PackagingComponent extends React.Component<RouteComponentProps> {
                         This sub-outcome was made during the first stage of the project in an attempt to reserach the relationship between the slogans and the advertised products. </p>
                 </div>
                 <div style={{
-                    width: "100%",
-                    height: "70%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                 }}>
-                    <Swiper navigation={true} className="mySwiper">
+                    <Swiper navigation={true} className="mySwiper" id="packangingSwipe">
                         {swiperSlides}
                     </Swiper>
                 </div>

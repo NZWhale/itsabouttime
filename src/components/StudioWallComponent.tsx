@@ -58,9 +58,11 @@ class StudioWallComponent extends React.Component<RouteComponentProps> {
 
                     </p>
                 </div>
-                <div style={{
+                <div
+                    id='weekliesDiv'
+                    style={{
                     width: "100%",
-                    height: "70%",
+                    // height: "70%",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

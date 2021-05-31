@@ -84,9 +84,9 @@ class PostersComponent extends React.Component<RouteComponentProps> {
                 <div className="headerDiv" >
                     <p style={{padding: "12px", width: "435px", textAlign: "center"}}>The posters come together to form 365 days, where each poster equals seven days. To highlight the individuality and the lack of strict chronology the posters are not bound together and can be hung in any order. The calendar grid depicts seven holes drilled through the top of the posters and Monday – Sunday printed on top of the designs. Much like I believe that a poster can be a painting, a sculpture, a publication, etc., I am convinced that a calendar can take any form and present itself through any medium as long as it somehow signifies the passing of time. In this case, the grid challenges conventions and continues the language of my experimental posters by just being holes and two words – the first and the last day of the week.</p>
                 </div>
-                <div style={{
-                    width: "100%",
-                    height: "70%",
+                <div
+                    id="weekliesDiv"
+                    style={{
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",

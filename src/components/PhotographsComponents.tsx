@@ -80,7 +80,7 @@ class PhotographsComponents extends React.Component<RouteComponentProps> {
                 </div>
                 <div style={{
                     width: "50%",
-                    height: "70%",
+                    height: "100%",
                     display: "flex",
                     flexDirection: "column",
                     flexWrap: "wrap"

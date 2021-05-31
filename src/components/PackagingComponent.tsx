@@ -36,7 +36,7 @@ class PackagingComponent extends React.Component<RouteComponentProps> {
                     }}> It's About Time</h1>
                 </div>
                 <div className="headerDiv">
-                    <h4>Packanging</h4>
+                    <h4>Packaging</h4>
                 </div>
                 <div className="headerDiv" >
                     <p style={{padding: "12px", width: "435px", textAlign: "center"}}>A series of formless packaging. They hug the product in such a way that it is impossible to guess what is inside. The viewer see the words/slogans first, the product inside it after.<br/><br/>

@@ -11,7 +11,7 @@ class MainPageComponent extends React.Component<RouteComponentProps> {
         return (
             <>
                 <div className="headerButtons">
-                    <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "14px"}} onClick={() => {
+                    <a style={{marginTop: "19px", cursor: "pointer", marginLeft: "23px", fontSize: "24px"}} onClick={() => {
                         this.props.history.push('/archive')
                     }}>FULL ARCHIVE</a><a
                     style={{marginTop: "19px", cursor: "pointer", marginRight: "23px", fontSize: "14px"}} onClick={() => {
